@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*MenU*/
+nav {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white;    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(255, 255, 255);
+    color: white;
+}
+nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+nav li a:hover {
+    background: tomato;
+    color: white;
+}
+.productos{
+    overflow: hidden;
+}
+/*CONTENIDO*/
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+p{
+    font-size: 17px;
+    text-align: center;
+}
+.slider {
+    text-align: center;
+}
+button{
+    display: inline-block;
+    text-align: center;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.v-container {
+	position: relative;
+	padding-bottom: 56.25%; /* proporción 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.v-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block
+}
+h4{
+    text-align: center;
+    
+}
+.chat{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+footer{
+    background: #333;
+}
+.pie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+section{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Formulario*/
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+fieldset{
+    background-color:rgb(206, 203, 199)
+}
+
+/*Medias Queris / responsive CELULAR*/
+@media screen and (min-width: 480px) {
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    .encabezado {
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .productos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .chat{
+        display: flex;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+    .pie{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*Grilla REMERAS HTML*/
+    
+    .grid{
+        margin-top: 30px;
+        text-align: center;
+        display: grid;
+        align-content: center;
+        justify-content: space-between;
+        grid-template-columns: 80%;
+        grid-template-rows: 50%;  
+        column-gap: 10px;
+        row-gap: 3em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+        
+}
+/*Responsive para Tablet*/
+@media screen and (min-width: 768px) {
+
+    .grid{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%; 
+        column-gap: 10px;
+        row-gap: 3em;
+    }
+    .pie{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+/*Responsive para escritorio*/
+@media screen and (min-width: 1200px) {
+    .grid{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 40% 40% 40%;
+        grid-template-rows: 50% 50% 50%; 
+        column-gap: 10px;
+        row-gap: 3em;
+    }
+    .pie{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
