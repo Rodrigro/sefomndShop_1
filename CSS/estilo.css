@@ -1,0 +1,62 @@
+
+
+
+/*CONTENIDO*/
+
+h2{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+p{
+    font-size: 17px;
+    text-align: center;
+}
+.slider {
+    text-align: center;
+}
+button{
+    display: inline-block;
+    text-align: center;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    
+
+.chat{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+footer{
+    background: #333;
+}
+.pie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+section{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Formulario*/
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+fieldset{
+    background-color:rgb(206, 203, 199)
+}
+
+
